@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "glowingstuffmod",
+	"version": "${version}",
+	"name": "glowing-stuff-mod",
+	"description": "A mod that adds glowing stuff.",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/glowingstuffmod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.cassy.glowingstuffmod.Glowingstuffmod"
+		],
+		"fabric-datagen": [
+			"net.cassy.glowingstuffmod.GlowingstuffmodDataGenerator"
+		],
+		"client": [
+			"net.cassy.glowingstuffmod.GlowingstuffmodClient"
+		]
+	},
+	"mixins": [
+		"glowingstuffmod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.5",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
